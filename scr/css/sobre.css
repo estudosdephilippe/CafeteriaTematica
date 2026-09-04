@@ -1,0 +1,33 @@
+:root{
+    --fundo1: #010D26;
+    --fundo2: #272727;
+    --fundo3: #320240;
+    --fundo4: #A429A6;
+    --fundo5: #F230E5;
+    --fundo6: #0396A6;
+    --colortxt1: #000;
+    --colortxt2: #fff;
+    --colortxt3: #010D26;
+    --colortxt4: #320240;
+    --colortxt5: #A429A6;
+    --colortxt6: #F230E5;
+    --colortxt7: #0396A6;
+}
+
+body{
+    background-color: var(--fundo1);
+    color: var(--colortxt2);
+}
+
+a{
+    color: var(--colortxt7);
+    text-decoration: none;
+}
+
+header{
+    display: inline-flex;
+}
+
+footer{
+    
+}
