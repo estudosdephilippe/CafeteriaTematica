@@ -1,80 +1,235 @@
 .imageProd{
-    width: 300px;
-    height: 280px;
-}
-
-.fundoTema1{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: fixed;
-    background-image: url(../acess/astro.png);
-    padding: 1%;
-}
-
-.tema1{
-    margin: 1%;
+    width: 200px;
+    height: 180px;
+    border-radius: 15px;
     display: flex;
-    background-color: var(--fundo1);
-    width: 40%;
-    height: 400px;
-    margin: 3%;
-    padding: 1%;
-    border-radius: 20px;
-    box-shadow: 0px 0px 15px var(--fundo7);
+    margin-left: 15%;
 }
 
-.fundoTema2{
-    margin: 1%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: fixed;
-    background-image: url(../acess/medieval.png);
-    padding: 1%;
+.emblema{
+    width: 200px;
+    height: 180px;  
+    margin-top: 15%;  
 }
 
-.tema2{
-    display: flex;
-    background-color: var(--fundo1);
-    width: 40%;
-    height: 400px;
-    margin: 3%;
-    padding: 1%;
-    border-radius: 20px;
-    box-shadow: 0px 0px 15px var(--fundo7);
+.sobreTema1{
+    text-shadow: 0px 0px 10px  var(--shadow2);
+    backdrop-filter: blur(50px);
 }
 
-.fundoTema3{
-    margin: 1%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: fixed;
-    background-image: url(../acess/cyber.png);
-    padding: 1%;
+.titulo2{
+    font-size: 25px;
 }
 
-.tema3{
-    display: flex;
-    background-color: var(--fundo1);
-    width: 40%;
-    height: 400px;
-    margin: 3%;
-    padding: 1%;
-    border-radius: 20px;
-    box-shadow: 0px 0px 15px var(--fundo7);
+.tituloTema1{
+    color: var(--colortxt7);
 }
+
+.subTituloTema1{
+    font-size: 15px;
+    margin: 1px;
+}
+
+.tituloTema2{
+    color: var(--colortxt9);
+}
+
+.sobreTema2{
+    text-shadow: 0px 0px 10px  var(--shadow1);
+    backdrop-filter: blur(50px);
+}
+
+.tituloTema3{
+    color: var(--colortxt6);
+}
+
+.sobreTema3{
+    text-shadow: 0px 0px 10px  var(--colortxt5);
+    backdrop-filter: blur(50px);
+}
+
+.tituloTema4{
+    color: var(--colortxt10);
+}
+
+.sobreTema4{
+    text-shadow: 0px 0px 10px  var(--shadow1);
+    backdrop-filter: blur(50px);
+
+}
+
+.descricao2{
+    font-size: 15px;
+}
+
 
 .ingred{
     color: var(--colortxt7);
 }
 
-.btnComprar{
+.ingredientes{
+    columns: 3;
+}
+
+.preco{
+    font-size: 25px;
+}
+.org1{
+    display: inline-flex;
     margin: 1%;
+}
+
+
+.fundoTema1{
+    display: inline-flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../acess/astro.png);
+    width: 100%;
+    padding: 1%;
+}
+
+
+/* Este é o tema do carde */
+.tema1{
+    margin: 1%;
+    backdrop-filter: blur(15px);
+    border: 2px solid;
+    border-color: var(--borda2);
+    box-shadow: 0px 0px 25px var(--shadow2) ;
+    width: 25%;
+    height: 500px;
+    margin: 3%;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+.fundoTema2{
+    margin: 1%;
+    width: 100%;
+    display: inline-flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../acess/medieval.png);
+    padding: 1%;
+}
+
+/* Este é o tema do carde */
+.tema2{
+    backdrop-filter: blur(15px);
+    border: 2px solid;
+    border-color: var(--borda11);
+    box-shadow: 0px 0px 25px var(--shadow1) ;
+    width: 25%;
+    height: 500px;
+    margin: 3%;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+.fundoTema3{
+    margin: 1%;
+    width: 100%;
+    display: inline-flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../acess/cyber.png);
+    padding: 1%;
+}
+
+/* Este é o tema do carde */
+.tema3{
+    backdrop-filter: blur(15px);
+    border: 2px solid;
+    border-color: var(--borda7);
+    box-shadow: 0px 0px 25px var(--shadow3) ;
+    width: 25%;
+    height: 500px;
+    margin: 3%;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+
+.fundoTema4{
+    width: 100%;
+    display: inline-flex;
+    margin: 1%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../acess/horror.png);
+    padding: 1%;
+}
+
+/* Este é o tema do carde */
+.tema4{
+    backdrop-filter: blur(15px);
+    border: 2px solid;
+    border-color: var(--borda9);
+    box-shadow: 0px 0px 25px var(--shadow1) ;
+    width: 25%;
+    height: 500px;
+    margin: 3%;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+
+.btnComprar1{
     border: 2px solid;
     border-color:  var(--borda2) ;
     width: 100%;
-    background-color: var(--fundo6);
+    background-color: var(--comprar3);
     color: var(--colortxt2);
     font-size: 130%;
     cursor: pointer;
     border-radius: 8px;
 }
+.btnCarrinho{
+    margin: 1%;
+    border: 2px solid;
+    border-color:  var(--borda2) ;
+    width: 100%;
+    background-color: var(--comprar3);
+    color: var(--colortxt2);
+    font-size: 130%;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.btnComprar2{
+    margin: 1%;
+    border: 2px solid;
+    border-color:  var(--borda9) ;
+    width: 100%;
+    background-color: var(--comprar4);
+    color: var(--colortxt2);
+    font-size: 130%;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.btnComprar3{
+    margin: 1%;
+    border: 2px solid;
+    border-color:  var(--borda6) ;
+    width: 100%;
+    background-color: var(--comprar2);
+    color: var(--colortxt2);
+    font-size: 130%;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.btnComprar4{
+    margin: 1%;
+    border: 2px solid;
+    border-color:  var(--borda10) ;
+    width: 100%;
+    background-color: var(--comprar5);
+    color: var(--colortxt2);
+    font-size: 130%;
+    cursor: pointer;
+    border-radius: 8px;
+}
+

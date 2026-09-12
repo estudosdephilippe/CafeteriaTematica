@@ -1,0 +1,40 @@
+/* Aqui funciona como palheta de cores para não alterar todas as cores do site um por um */
+:root{
+    --fundo1: #010D26;
+    --fundo2: #272727;
+    --fundo3: #320240;
+    --fundo4: #A429A6;
+    --fundo5: #F230E5;
+    --fundo6: #0396A6;
+    --fundo7: #000000;
+    --fundo8: #016874;
+    --colortxt1: #000000;
+    --colortxt2: #ffffff;
+    --colortxt3: #010D26;
+    --colortxt4: #320240;
+    --colortxt5: #A429A6;
+    --colortxt6: #F230E5;
+    --colortxt7: #0396A6;
+    --colortxt8: #016874;
+    --colortxt9:#d34d00;
+    --colortxt10: #ff0000;
+    --borda1: #016874;
+    --borda2: #0396A6;
+    --borda3: #010D26;
+    --borda4: #272727;
+    --borda5: #320240;
+    --borda6: #A429A6;
+    --borda7: #F230E5;
+    --borda8: #000000;
+    --borda9: #ff0000;
+    --borda10: #9e0303;
+    --borda11: #ff7300;
+    --shadow1: #9e0303;
+    --shadow2: #016874;
+    --shadow3: #A429A6;
+    --comprar1:#09ff00;
+    --comprar2:#F230E5;
+    --comprar3:#0396A6;
+    --comprar4:#d34d00;
+    --comprar5: #ff0000;
+}

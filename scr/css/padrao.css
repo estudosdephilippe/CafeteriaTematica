@@ -1,30 +1,4 @@
-/* Aqui funciona como palheta de cores para não alterar todas as cores do site um por um */
-:root{
-    --fundo1: #010D26;
-    --fundo2: #272727;
-    --fundo3: #320240;
-    --fundo4: #A429A6;
-    --fundo5: #F230E5;
-    --fundo6: #0396A6;
-    --fundo7: #000000;
-    --fundo8: #016874;
-    --colortxt1: #000000;
-    --colortxt2: #ffffff;
-    --colortxt3: #010D26;
-    --colortxt4: #320240;
-    --colortxt5: #A429A6;
-    --colortxt6: #F230E5;
-    --colortxt7: #0396A6;
-    --borda1: #016874;
-    --borda2: #0396A6;
-    --borda3: #010D26;
-    --borda4: #272727;
-    --borda5: #320240;
-    --borda6: #A429A6;
-    --borda7: #F230E5;
-    --borda8: #000000;
-    --comprar: #09ff00;
-}
+
 
 /* Estilização padrão do site  */
 body{
@@ -129,14 +103,7 @@ a{
     text-decoration: none;
 }
 
-/* para estilizar as boas vindas do site */
-.fundo1{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 500px;
-    background-image: url(/scr/acess/fundo1.png);
-}
+
 
 /* para estilizar o rodapé do site */
 footer{
