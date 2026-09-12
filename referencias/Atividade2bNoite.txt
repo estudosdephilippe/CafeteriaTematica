@@ -1,14 +1,4 @@
-1º ABRIR O VISUAL STUDIO E CRIAR UM PROJETO LOJA - COM FRAMEWORK 8
 
-2º BOTÃO DIREITO NA PASTA DO PROJETO NO DESKTOP, CLIQUE EM OPEN GIT BASH HERE(MOSTRAR OPÇÕES)
-
-3º CRIAR O REPOSITÓRIO NO GITHUB
-
-4º DENTRO DA PASTA DO PROJETO DIGITE: touch .gitignore
-
-5º IR NO https://www.toptal.com/developers/gitignore E GERAR O GIT IGNORE O VISUAL STUDIO
-
-6º COLAR O CODIGO NO .gitignore
 
 7º NO TERMINAL DIGITE: git init
 
@@ -33,31 +23,4 @@ Dicaº Para corrigir o ultimo commit : git --amend -m "mensagem corigida"
 
 
 
-A rede de postos ChargeCity precisa de um programa para calcular o valor cobrado em uma sessão de 
-carregamento rápido e emitir um comprovante informando o tempo de espera.
 
-Requisitos do Sistema:
-
-Solicite ao usuário: 
-o Nome do Motorista, 
-a Capacidade do Bateria (em kWh)
-a Porcentagem Atual da Bateria (%) 
-e a Potência do Carregador (em kW).
-
-O programa deve calcular:
-
-Quantos kWh precisam ser carregados para atingir 100%.
-
-O Tempo estimado de recarga (em horas): Fórmula: kWh a carregar / Potência do Carregador.
-
-O Valor da Recarga (R$): Preço fixo de R$ 2,10 por kWh recarregado.
-
-Mostrar na tela:
-
-O nome do motorista em letras maiúsculas.
-
-A quantidade de kWh faltantes.
-
-O tempo estimado em horas e o custo total da recarga.
-
-Um indicador booleano Carregamento Super-Rápido (Verdadeiro se a potência do carregador for maior ou igual a 50 kW E o tempo de recarga for menor que 1 hora).
