@@ -6,6 +6,7 @@ body{
     color: var(--colortxt2);
     font-family: 'Rajdhani', sans-serif;
     margin: 0;
+    
 }
 
 /* para estilizar textos (foi usado para estilizar as boas vindas)*/
@@ -56,7 +57,7 @@ a{
 
 
 .copyright {
-    width: 100%;
+
     padding: 20px 10px;
     text-align: center;
     box-sizing: border-box;

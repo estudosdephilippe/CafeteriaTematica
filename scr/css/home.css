@@ -11,11 +11,12 @@
 
 /* para estilizar as boas vindas do site */
 .fundo1{
+
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 500px;
-    background-image: url(/scr/acess/fundo1.png);
+    background-image: url(../acess/fundo1.png);
 }
 
 /* para moldar o contéudo dentro e entre as divs  */
