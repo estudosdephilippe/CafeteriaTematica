@@ -55,6 +55,29 @@ a{
 }
 
 
+.copyright {
+    width: 100%;
+    padding: 20px 10px;
+    text-align: center;
+    box-sizing: border-box;
+    border-top: 1px solid var(--colortxt6);
+    color: #b8b8c8;
+    font-size: 14px;
+}
+
+.copyright p {
+    margin: 5px 0;
+}
+
+.copyright p:first-child {
+    color: var(--colortxt6);
+}
+
+.copyright p:last-child {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
 
 /* para estilizar o rodapé do site */
 footer{
