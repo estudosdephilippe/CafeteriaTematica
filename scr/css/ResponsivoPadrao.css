@@ -1,0 +1,567 @@
+
+/* ==========================================
+   RESPONSIVIDADE PARA TELAS DE ATÉ 480px
+   Aplica estas regras em celulares e telas
+   pequenas com largura de até 480 pixels.
+========================================== */
+
+@media screen and (max-width: 480px) {
+
+    /* ======================================
+       1. CABEÇALHO
+    ====================================== */
+
+    header {
+        /* Usa Grid para organizar os elementos
+           em linhas e colunas. */
+        display: grid !important;
+
+        /* Cria duas colunas:
+           - A primeira ocupa o espaço disponível.
+           - A segunda se ajusta ao tamanho dos ícones. */
+        grid-template-columns: minmax(0, 1fr) auto;
+
+        /* Define a posição de cada elemento:
+           primeira linha: logo e ações;
+           segunda linha: navegação ocupando tudo. */
+        grid-template-areas:
+            "logo acoes"
+            "navega navega";
+
+        /* Centraliza verticalmente os elementos
+           dentro de suas respectivas áreas. */
+        align-items: center;
+
+        /* Define o espaçamento:
+           12px entre linhas e 8px entre colunas. */
+        gap: 12px 8px;
+
+        /* Faz o cabeçalho ocupar toda a largura disponível. */
+        width: 100%;
+
+        /* Cria 12px de espaço interno em todos os lados. */
+        padding: 12px;
+
+        /* Inclui padding e bordas no cálculo da largura. */
+        box-sizing: border-box;
+    }
+
+
+    /* ======================================
+       2. LOGO DO COFFEE CITY
+    ====================================== */
+
+    .Logo {
+        /* Coloca a logo na área chamada "logo"
+           definida no Grid do cabeçalho. */
+        grid-area: logo;
+
+        /* Define a largura da logo em celulares. */
+        width: 70px;
+
+        /* Impede que ultrapasse o espaço disponível. */
+        max-width: 100%;
+
+        /* Mantém a altura proporcional à largura. */
+        height: auto;
+
+        /* Remove margens que poderiam deslocá-la. */
+        margin: 0;
+    }
+
+    /* Link que envolve a imagem da logo */
+    .LogoButton {
+        /* Faz o link ocupar sua própria linha. */
+        display: block;
+
+        /* Ocupa toda a largura disponível no contêiner. */
+        width: 100%;
+    }
+
+    /* Imagem da logo */
+    .icon {
+        /* Evita espaços extras de imagem em linha. */
+        display: block;
+
+        /* Faz a imagem acompanhar o tamanho do contêiner. */
+        width: 100%;
+
+        /* Limita a largura máxima da imagem a 70px. */
+        max-width: 70px;
+
+        /* Mantém a proporção original da imagem. */
+        height: auto;
+    }
+
+
+    /* ======================================
+       3. GRUPO DE AÇÕES: PERFIL E CARRINHO
+    ====================================== */
+
+    .acoes {
+        /* Posiciona o grupo na área "acoes" do Grid. */
+        grid-area: acoes;
+
+        /* Organiza os ícones horizontalmente. */
+        display: flex;
+
+        /* Centraliza os ícones verticalmente. */
+        align-items: center;
+
+        /* Encosta os ícones à direita do espaço disponível. */
+        justify-content: flex-end;
+
+        /* Define 8px entre os ícones. */
+        gap: 8px;
+
+        /* Remove margens externas. */
+        margin: 0;
+
+        /* Remove espaçamento interno. */
+        padding: 0;
+
+        /* Permite que o grupo encolha se necessário. */
+        min-width: 0;
+
+        /* Remove marcadores de lista, se existirem. */
+        list-style: none;
+    }
+
+    /* Cada item que contém um botão */
+    .acoes li {
+        /* Remove o marcador da lista. */
+        list-style: none;
+
+        /* Remove margens externas. */
+        margin: 0;
+
+        /* Remove espaçamento interno. */
+        padding: 0;
+    }
+
+
+    /* ======================================
+       4. BOTÕES DE PERFIL E CARRINHO
+    ====================================== */
+
+    /* Aplica as mesmas regras às duas classes. */
+    .Perfil,
+    .Carrinho {
+        /* Permite centralizar o ícone dentro do botão. */
+        display: flex;
+
+        /* Centraliza verticalmente. */
+        align-items: center;
+
+        /* Centraliza horizontalmente. */
+        justify-content: center;
+
+        /* Define a largura do botão. */
+        width: 40px;
+
+        /* Define a altura do botão. */
+        height: 40px;
+
+        /* Cria 5px de espaço interno. */
+        padding: 5px;
+
+        /* Remove margens externas. */
+        margin: 0;
+
+        /* Inclui padding e bordas nas dimensões definidas. */
+        box-sizing: border-box;
+
+        /* Impede que o Flexbox comprima os botões. */
+        flex-shrink: 0;
+    }
+
+    /* Imagens dos ícones do perfil e carrinho */
+    .icons2 {
+        /* Faz a imagem se comportar como um bloco. */
+        display: block;
+
+        /* Ocupa a largura interna disponível. */
+        width: 100%;
+
+        /* Ocupa a altura interna disponível. */
+        height: 100%;
+
+        /* Mantém a proporção e ajusta a imagem ao espaço. */
+        object-fit: contain;
+    }
+
+
+    /* ======================================
+       5. BARRA DE NAVEGAÇÃO
+    ====================================== */
+
+    .navega {
+        /* Coloca a navegação na área "navega",
+           que ocupa as duas colunas do Grid. */
+        grid-area: navega;
+
+        /* Organiza os links usando Flexbox.
+           !important prevalece sobre declarações
+           normais conflitantes de display. */
+        display: flex !important;
+
+        /* Mantém os links na direção horizontal. */
+        flex-direction: row !important;
+
+        /* Permite que os links passem para outra linha
+           quando não houver espaço suficiente. */
+        flex-wrap: wrap;
+
+        /* Centraliza os links horizontalmente. */
+        justify-content: center;
+
+        /* Alinha os links verticalmente. */
+        align-items: center;
+
+        /* Faz a navegação ocupar toda a largura disponível. */
+        width: 100%;
+
+        /* Permite que a navegação encolha dentro do Grid. */
+        min-width: 0;
+
+        /* Define 8px entre os links. */
+        gap: 8px;
+
+        /* Remove margens externas. */
+        margin: 0;
+
+        /* Adiciona 6px de espaço acima dos links,
+           sem padding nas laterais ou embaixo. */
+        padding: 6px 0 0;
+
+        /* Inclui padding e bordas na largura calculada. */
+        box-sizing: border-box;
+    }
+
+
+    /* ======================================
+       6. LINKS: INÍCIO, CARDÁPIO, COLEÇÕES...
+    ====================================== */
+
+    .buttonNav {
+        /* Faz o link se comportar como um elemento
+           em linha, com alinhamento Flexbox. */
+        display: inline-flex;
+
+        /* Centraliza o conteúdo horizontalmente. */
+        align-items: center;
+
+        /* Centraliza o conteúdo verticalmente. */
+        justify-content: center;
+
+        /* Define o tamanho da fonte em celulares. */
+        font-size: 15px;
+
+        /* 7px na vertical e 6px nas laterais. */
+        padding: 7px 6px;
+
+        /* Remove margens externas dos links. */
+        margin: 0;
+
+        /* Permite que textos quebrem em várias linhas
+           se não houver espaço suficiente. */
+        white-space: normal;
+
+        /* Centraliza o texto quando ele quebra de linha. */
+        text-align: center;
+
+        /* Mantém o cálculo das dimensões previsível. */
+        box-sizing: border-box;
+    }
+
+
+    /* ======================================
+       7. DESTAQUE DA PÁGINA ATUAL
+    ====================================== */
+
+    .atual {
+        /* Faz o contêiner acompanhar o tamanho do link. */
+        display: inline-flex;
+
+        /* Remove margens externas. */
+        margin: 0;
+
+        /* Remove espaçamento interno. */
+        padding: 0;
+    }
+
+    /* Altera a cor do link dentro da classe .atual. */
+    .atual .buttonNav {
+        /* Usa a cor temática definida no seu CSS. */
+        color: var(--colortxt6);
+    }
+
+    .posi1{
+        width: 100%;
+        display: block;
+    }
+
+    .conteudo{
+        width: 100%;
+        font-size: 13px;
+        gap: 2px;
+    }
+
+    footer{
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+   
+
+         /* CABEÇALHO */
+
+   header {
+
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) auto;
+        grid-template-areas:
+            "logo acoes"
+            "navega navega";
+        align-items: center;
+        gap: 12px 8px;
+        width: 100%;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+   .Logo {
+        grid-area: logo;
+        width: 70px;
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+    }
+   .LogoButton {
+        display: block;
+        width: 100%;
+    }
+    .icon {
+        display: block;
+        width: 100%;
+        max-width: 70px;
+        height: auto;
+    }
+   .acoes {
+        grid-area: acoes;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 8px;
+        margin: 0;
+        padding: 0;
+        min-width: 0;
+        list-style: none;
+    }
+    .acoes li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .Perfil,
+    .Carrinho {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        margin: 0;
+        box-sizing: border-box;
+        flex-shrink: 0;
+    }
+
+    .icons2 {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .navega {
+        grid-area: navega;
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-width: 0;
+        gap: 8px;
+        margin: 0;
+        padding: 6px 0 0;
+        box-sizing: border-box;
+    }
+
+    .buttonNav {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        padding: 7px 6px;
+        margin: 0;
+        white-space: normal;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .atual {
+        display: inline-flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .atual .buttonNav {
+        color: var(--colortxt6);
+    }
+
+    .posi1{
+        width: 100%;
+        display: block;
+    }
+
+    .conteudo{
+        width: 100%;
+        font-size: 15px;
+        gap: 7px;
+    }
+
+    footer{
+        font-size: 15px;
+    }
+
+}
+@media screen and (max-width: 1200px) {
+   
+
+         /* CABEÇALHO */
+
+   header {
+
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) auto;
+        grid-template-areas:
+            "logo acoes"
+            "navega navega";
+        align-items: center;
+        gap: 12px 8px;
+        width: 100%;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+   .Logo {
+        grid-area: logo;
+        width: px;
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+    }
+   .LogoButton {
+        display: block;
+        width: 100%;
+    }
+    .icon {
+        display: block;
+        width: 100%;
+        max-width: 90px;
+        height: auto;
+    }
+   .acoes {
+        grid-area: acoes;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 8px;
+        margin: 0;
+        padding: 0;
+        min-width: 0;
+        list-style: none;
+    }
+    .acoes li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .Perfil,
+    .Carrinho {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        margin: 0;
+        box-sizing: border-box;
+        flex-shrink: 0;
+    }
+
+    .icons2 {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .navega {
+        grid-area: navega;
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-width: 0;
+        gap: 8px;
+        margin: 0;
+        padding: 6px 0 0;
+        box-sizing: border-box;
+    }
+
+    .buttonNav {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        padding: 7px 6px;
+        margin: 0;
+        white-space: normal;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .atual {
+        display: inline-flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .atual .buttonNav {
+        color: var(--colortxt6);
+    }
+
+    .posi1{
+        width: 100%;
+        display: block;
+    }
+
+    .conteudo{
+        width: 100%;
+        font-size: 15px;
+        gap: 7px;
+    }
+
+    footer{
+        font-size: 15px;
+    }
+
+}

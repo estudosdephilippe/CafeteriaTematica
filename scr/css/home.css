@@ -17,3 +17,10 @@
     height: 500px;
     background-image: url(/scr/acess/fundo1.png);
 }
+
+/* para moldar o contéudo dentro e entre as divs  */
+.conteudo{
+    padding: 1%;
+    width: 40%;
+    height: 300px;
+}

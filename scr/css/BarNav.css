@@ -1,0 +1,94 @@
+/* Estilização do cabeçalho do site */
+header{
+    backdrop-filter:  blur(5px);
+    display: inline-flex;
+
+    box-shadow: 0px 10px 10px #000;
+    width: 99%;
+    padding: 10px;
+    position: relative;
+}
+
+/* estiliza a area onde fica os botões de navegação */
+
+    .navega{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12 px;
+ 
+    }
+
+    /* Ações à direita */
+    .acoes {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+        margin-left: 20%  ;
+    }
+    .Logo{
+        display: block;
+        width: 90px;
+        height: auto;
+        margin-right: 25%;
+    }
+
+
+    /* botão de navegação */
+    .buttonNav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1%;
+        margin: 5px;
+        font-size: 30px;
+        transition: 2s; 
+    }
+    .buttonNav:hover{
+        color: var(--colortxt6);
+        transition: 1s;
+    }
+
+    /* pra mostrar em qual pagina o usuário está */
+    .atual{
+        color: var(--colortxt6);
+        text-decoration: underline 3px;
+        transition: 2s;
+    }
+
+    /* moldando o tamanho do incone da logo */
+    .icon{
+        width: 90px;
+
+    }
+
+    /* moldando o tamanho do incones pequenos */
+    .icons2{
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .Perfil,
+    .Carrinho{
+    border: 4px var(--colortxt2);
+    transition: 0.6s;
+    margin: 10px;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    backdrop-filter: blur(25px);
+    background-color: var(--fundo5);
+    border-radius: 10px;
+}
+
+    .Carrinho:hover,
+    .Perfil:hover {
+    transition: 0.5s;
+    transform: translateY(-3px);
+    box-shadow: 0px 0px 25px var(--colortxt6);
+    background-color: var(--fundo9);
+    
+    }

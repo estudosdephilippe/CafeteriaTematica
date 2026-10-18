@@ -6,29 +6,39 @@
     <link rel="stylesheet" href="./scr/css/cardapio.css">
     <link rel="stylesheet" href="./scr/css/padrao.css">
     <link rel="stylesheet" href="./scr/css/cores.css">
+    <link rel="stylesheet" href="./scr/css/BarNav.css">
     <link rel="icon" href="./scr/acess/iconSemNome.png">
+    
+    <!-- layout responsivo -->
+    <link rel="stylesheet" href="./scr/css/ResponsivoPadrao.css">
     <title>Coffee City</title>
 </head>
 <body>
-    <!--Imagem de fundo-->
-    <div class="fundo1">
     <header >
-        <img src="/scr/acess/inconComNome.png" class="icon">
-        <ul class="navega">
-            <li><a class="buttonNav" href="/index.html">Inicio</a></li>
-            <li><a class="buttonNav" href="/Cardapio.html">Cardápio</a></li>
-            <li><a class="buttonNav" href="/colecao.html">Colecionaveis</a></li>
-            <li><a class="buttonNav" href="/sobre.html">Sobre nós</a></li>
-        </ul>
-
-        <ul>
-            <li><a href="/carrinho.html"></a></li>
-            <li><a href="/perfil.html"></a></li>
-        </ul>
+        <!-- Logo que faz voltar pra pagina inicial -->
+        <div class="Logo">
+        <a class="LogoButton" href="/index.html"><img src="/scr/acess/inconComNome.png" class="icon"></a>
+        </div>
         
+        <!-- barra de navegação -->
+        <nav class="navega">
+            <span class="atual"><a class="buttonNav"href="./index.html">Inicio</a></span></li>
+            <a class="buttonNav" href="./Cardapio.html">Cardápio</a></li>
+            <a class="buttonNav" href="./colecao.html">Colecionaveis</a></li>
+            <a class="buttonNav" href="./sobre.html">Sobre</a></li>
+        </nav>
+
+        <!-- barra de perfil e carrinho -->
+        <div class="acoes">
+            <li><a class="Carrinho" href="./carrinho.html"><img class="icons2" src="./scr/acess/Icons/cart.svg"></a></li>
+            <li><a class="Perfil" href="./perfil.html" aria-label="Meu Perfil"><img class="icons2" src="./scr/acess/Icons/person-circle.svg"></a></li>
+        </div>
+        
+
     </header>
 
 
+    <!-- Aqui é o rodapé do site -->
     <footer>
 
         <ul>
